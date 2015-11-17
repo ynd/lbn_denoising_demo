@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Denoising with Linearizing Belief Nets</title>
+
+        <!-- Framework CSS -->
+        <link rel="stylesheet" href="blueprint/screen.css" type="text/css" media="screen, projection">
+        <link rel="stylesheet" href="blueprint/print.css" type="text/css" media="print">
+        <!--[if lt IE 8]><link rel="stylesheet" href="../../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+
+
+        <!-- Import fancy-type plugin for the sample page. -->
+        <link rel="stylesheet" href="blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+        <style type="text/css">
+            body {
+                background-image: url("media/stripe.png");
+                font-family: helvetica;
+                padding-top: 3em;
+            }
+            h1 {
+                font-size: 4em;
+                color: #41425a;
+                line-height: 1.25em;
+            }
+            p {
+                font-size: 2em;
+            }
+            .container {
+                padding: 2em;
+                background-color: #FFF;
+                border-style: solid;
+                border-color: #787887;
+                border-width: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="span-21"><h1>Denoising with Linearizing Belief Nets</h1></div>
+            <div class="span-1 last"><img src="media/facebook.png" width="100px"></div>
+            <hr>
+
+            <div class="span-24 last">
+                <img src="media/noisy_barbara.png">
+                <div style="position: relative; left: 100px; top: -250px; width: 778px; height: 280px; border: 1px solid black; background: WHITE;">
+                    <div style="float: left; width: 256px; margin-right: 5px">
+                        <img src="media/barbara_bm3d.png" width="256px">
+                        <center><emph>BM3D</emph></center>
+                    </div>
+
+                    <div style="float: left; width: 256px; margin-right: 5px">
+                        <img src="media/barbara_corner_k1_c100.gif" width="256px">
+                        <center><emph>LBN (K=1)</emph></center>
+                    </div>
+
+                    <div style="float: left; width: 256px;">
+                        <img src="media/barbara_corner_k10_c100.gif" width="256px">
+                        <center><emph>LBN (K=10)</emph></center>
+                    </div>
+                </div>
+            </div>
+            <div class="span-24 last" style="position: relative; top: -225px">
+                <p></p>
+                <p style="margin: 1em;">Wait for the large gifs to load.</p>
+                <p style="margin: 1em;">The demo compares the denoising results for the state-of-the-art BM3D model and the LBNs. The LBN generates more realistic images than BM3D while properly modelling the uncertainty associated with denoising. We can also see that increasing the number of Monte Carlo samples K improves the variety of the distribution modelled.</p>
+                <center><p style="margin: 1em;"><a href="">Read the paper</a></p></center>
+            </div>
+        </div>
+
+    </body>
+</html>
